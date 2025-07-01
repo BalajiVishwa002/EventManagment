@@ -1,0 +1,29 @@
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: 100px;
+    box-shadow: 4px 1px 9px #000;
+    margin-bottom: 10px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-items li
+{
+    list-style-type: none;
+
+}
+
+.nav-items li a
+{
+    color: black;
+    text-decoration: none;
+}
