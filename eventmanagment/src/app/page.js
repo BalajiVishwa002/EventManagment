@@ -8,7 +8,7 @@ const fetchData = async (url) => await fetch(url).then((res) => res.json());
 
 export default function Home() {
   const { data, error, isLoading } = useSWR(
-    "http://192.168.34.182:8000/api/get-all-event/",
+    "http://192.168.29.208:8000/api/get-all-event/",
     fetchData
   );
   useEffect(() => {}, [data]);
@@ -22,15 +22,13 @@ export default function Home() {
             <div className="spinner-border text-primary" role="status">
               <span className="visually-hidden">Loading...</span>
             </div>
-          ) : data ? (
-            <h1 className="text-center">No Events Found</h1>
-          ) : (
+          ) : 
             data?.map((ele, index) => {
               return (
                 <div className="col-md-3" key={index}>
                   <div className="card" style={{ width: "18rem" }}>
                     <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">Event - {index+1}</h5>
                       <h6 className="card-subtitle mb-2 text-body-secondary">
                         {ele.title}
                       </h6>
@@ -39,7 +37,7 @@ export default function Home() {
                   </div>
                 </div>
               );
-            })
+            }
           )}
         </div>
       </div>

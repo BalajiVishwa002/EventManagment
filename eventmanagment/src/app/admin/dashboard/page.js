@@ -8,7 +8,7 @@ export default function DashboardPage() {
   console.log(status);
 
   const fetchData = async () =>
-    await fetch("http://192.168.34.182:8000/api/dashboard/", {
+    await fetch("http://192.168.29.208:8000/api/dashboard/", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${session.token}`,

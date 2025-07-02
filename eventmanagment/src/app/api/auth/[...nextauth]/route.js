@@ -11,7 +11,7 @@ const handleLoin = NextAuth({
         password: { label: "password", type: "password" },
       },
       async authorize(credentials) {
-        const res = await fetch("http://192.168.34.182:8000/api/login/", {
+        const res = await fetch("http://192.168.29.208:8000/api/login/", {
           method: "POST",
           body: JSON.stringify(credentials),
           headers: {

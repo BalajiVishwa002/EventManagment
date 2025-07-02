@@ -17,7 +17,7 @@ export default  function GetEvent({ params }) {
   });
 
   const fetchEvent = async () =>
-    await fetch(`http://192.168.34.182:8000/api/get-event/${paramid}/`)
+    await fetch(`http://192.168.29.208:8000/api/get-event/${paramid}/`)
       .then((res) => res.json())
       .then((events) => {
         console.log(events);
@@ -70,7 +70,7 @@ export default  function GetEvent({ params }) {
 
     if (valid) {
       var response = await fetch(
-        "http://192.168.34.182:8000/api/update-event/",
+        "http://192.168.29.208:8000/api/update-event/",
         {
           method: "POST",
           headers: {
