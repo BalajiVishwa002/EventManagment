@@ -32,7 +32,7 @@ export default function Home() {
                       <h6 className="card-subtitle mb-2 text-body-secondary">
                         {ele.title}
                       </h6>
-                      <p className="card-text">{ele.desc}</p>
+                      <p className="card-text">{ele.description}</p>
                     </div>
                   </div>
                 </div>
