@@ -8,7 +8,7 @@ const fetchData = async (url) => await fetch(url).then((res) => res.json());
 
 export default function Home() {
   const { data, error, isLoading } = useSWR(
-    "http://192.168.29.208:8000/api/get-all-event/",
+    `${process.env.BASE_URL}api/get-all-event/`,
     fetchData
   );
   useEffect(() => {}, [data]);

@@ -11,7 +11,7 @@ export default function EventTable() {
   const fetchEvents = () => {
     setisLoading(true);
     try {
-      fetch("http://192.168.29.208:8000/api/get-all-event/")
+      fetch(`${process.env.BASE_URL}api/get-all-event/`)
         .then((res) => res.json())
         .then((event) => {
           setevents(event);
@@ -34,7 +34,7 @@ export default function EventTable() {
       var result = confirm("Are you sure delete the record ?");
       if (result) {
         const res = await fetch(
-          `http://192.168.29.208:8000/api/delete-event/${id}/`,
+          `${process.env.BASE_URL}api/delete-event/${id}/`,
           {
             method: "GET",
             headers: {

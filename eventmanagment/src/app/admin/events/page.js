@@ -57,7 +57,7 @@ export default function Addevent() {
         console.log(formdata);
 
         var response = await fetch(
-          "http://192.168.29.208:8000/api/add-event/",
+          `${process.env.BASE_URL}api/add-event/`,
           {
             method: "POST",
             headers: {
