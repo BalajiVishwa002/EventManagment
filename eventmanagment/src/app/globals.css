@@ -5,9 +5,9 @@
 }
 body
 {
-    /* background-image: url("https://t4.ftcdn.net/jpg/06/91/06/53/360_F_691065307_IG2Pddis092Dy1xA8mMFcMcg50P9C9L6.jpg");
+    background-image: url("../../public/background.jpg");
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
      min-height: 100vh;
 }
 
