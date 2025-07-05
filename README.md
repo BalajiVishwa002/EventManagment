@@ -4,3 +4,4 @@
 4.Loadeders inlcued 
 5.Toasters has been inclued
 6.Add Base url in next.config.mjs
+7.Backgroud image added
