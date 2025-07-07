@@ -70,7 +70,7 @@ export default  function GetEvent({ params }) {
 
     if (valid) {
       var response = await fetch(
-        "http://192.168.29.208:8000/api/update-event/",
+        `${process.env.BASE_URL}api/update-event/`,
         {
           method: "POST",
           headers: {
